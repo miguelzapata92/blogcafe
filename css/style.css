@@ -74,8 +74,14 @@ img {
         justify-content: space-between;
         align-items: center;
     }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 2rem);
+    }
     .columnas-6 {
         flex: 0 0 calc(50% - 2rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 2rem);
     }
 }
 
@@ -219,7 +225,6 @@ img {
 .lista-cursos {
     padding: 0;
     list-style: none;
-    border-bottom: 1px solid #e1e1e1e1;
 }
 
 .lista-cursos:last-of-type {
@@ -227,7 +232,9 @@ img {
 }
 
 .curso {
+    padding-top: 3rem;
     padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1e1;
 }
 
 .curso p {
@@ -237,6 +244,10 @@ img {
 }
 
 .curso p span {
+    font-weight: 400;
+}
+
+.curso p.descripcion-curso {
     font-weight: 400;
 }
 
